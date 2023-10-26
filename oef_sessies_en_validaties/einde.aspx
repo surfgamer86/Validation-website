@@ -15,6 +15,18 @@
                 Je gegevens:</p>
             <p>
                 &nbsp;</p>
+            <p>
+                mailadres:
+                <asp:Label ID="emailLabel" runat="server" Text="Label"></asp:Label>
+            </p>
+            <p>
+                Wachtwoord:
+                <asp:Label ID="wachtwoordLabel" runat="server" Text="Label"></asp:Label>
+            </p>
+            <p>
+                Nieuwsbrief:
+                <asp:Label ID="nieuwsbriefLabel" runat="server" Text="Label"></asp:Label>
+            </p>
         </div>
     </form>
 </body>
