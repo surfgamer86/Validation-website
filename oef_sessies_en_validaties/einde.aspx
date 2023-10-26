@@ -10,6 +10,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h3>Einde</h3>
+            <p>
+                Je gegevens:</p>
+            <p>
+                &nbsp;</p>
         </div>
     </form>
 </body>

@@ -13,5 +13,14 @@ namespace oef_sessies_en_validaties
         {
 
         }
+
+        protected void continueButton_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                Session["password"] = passwordTextBox.Text;
+                Server.Transfer("stap3.aspx");
+            }
+        }
     }
 }

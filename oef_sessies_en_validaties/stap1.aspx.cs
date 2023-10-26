@@ -21,6 +21,7 @@ namespace oef_sessies_en_validaties
             {
                 Session["email"] = emailTextbox.Text;
                 Session["provider"] = DropDownList1.SelectedValue;
+                Server.Transfer("stap2.aspx");
             }
         }
     }
