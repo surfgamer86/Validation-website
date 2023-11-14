@@ -9,10 +9,16 @@ namespace oef_sessies_en_validaties
 {
     public partial class stap3 : System.Web.UI.Page
     {
-        Gebruiker Session = new Gebruiker();
+        /*   G*/
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void continueButton_Click(object sender, EventArgs e)
+        {
+            Session["nieuws"] = nieuwsbriefCheckBox.Checked;
+            Response.Redirect("einde.aspx");
         }
     }
 }

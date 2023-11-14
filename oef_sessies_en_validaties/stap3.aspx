@@ -10,6 +10,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h3>Stap 3</h3>
+            <p>
+                <asp:CheckBox ID="nieuwsbriefCheckBox" runat="server" Text="Ik wens de nieuwsbrief te ontvangen" Checked="True" />
+            </p>
+            <asp:Button ID="continueButton" runat="server" OnClick="continueButton_Click" Text="&gt;&gt;" />
         </div>
     </form>
 </body>
