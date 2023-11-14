@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace oef_sessies_en_validaties
 {
@@ -13,9 +13,9 @@ namespace oef_sessies_en_validaties
             wachtwoordLabel.Text = Convert.ToString(Session["password"]);
             if (Convert.ToBoolean(Session["nieuws"] = true))
             {
-                Nieuws = "ja";
+                 Nieuws = "ja";
             }
-            else { Nieuws = "nee"; }
+            else {  Nieuws = "nee"; }
             nieuwsbriefLabel.Text = Nieuws;
         }
     }

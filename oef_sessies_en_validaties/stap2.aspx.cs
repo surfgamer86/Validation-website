@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -26,7 +26,6 @@ namespace oef_sessies_en_validaties
                 Session["password"] = passwordTextBox.Text;
                 Response.Redirect("stap3.aspx");
                 Session["Stap2"] = "ja"; 
-
             }
         }
     }

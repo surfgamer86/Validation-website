@@ -9,7 +9,6 @@ namespace oef_sessies_en_validaties
 {
     public partial class stap3 : System.Web.UI.Page
     {
-        /*   G*/
         protected void Page_Load(object sender, EventArgs e)
         {
 
