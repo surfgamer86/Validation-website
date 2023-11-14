@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +11,11 @@ namespace oef_sessies_en_validaties
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session["Stap2"] = "no";
+            if (Session["Stap1"].ToString() != "ja" || Session["Stap2"].ToString() == "ja")
+            {
+                Response.Redirect("stap1.aspx");
+            }
 
         }
 
@@ -19,7 +24,8 @@ namespace oef_sessies_en_validaties
             if (Page.IsValid)
             {
                 Session["password"] = passwordTextBox.Text;
-                Server.Transfer("stap3.aspx");
+                Response.Redirect("stap3.aspx");
+                Session["Stap2"] = "ja"; 
             }
         }
     }
